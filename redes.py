@@ -1,4 +1,5 @@
 import os
+import json
 from tkinter import Variable
 
 # Inicialización de variables 
@@ -6,14 +7,22 @@ x = 0
 y = 0
 os.system("clear")
 
-# Base de datos vacía
-dispositivos_por_campus = {
-    "zona core": [],
-    "campus uno": [],
-    "campus matriz": [],
-    "dual stack": [],
-    "sector outsourcing": []
-}
+# Archivo para guardar los datos
+archivo_datos = "dispositivos.txt"
+
+# Si el archivo existe, cargar los datos
+if os.path.exists(archivo_datos):
+    with open(archivo_datos, "r") as archivo:
+        dispositivos_por_campus = json.load(archivo)
+else:
+    # Base de datos vacía
+    dispositivos_por_campus = {
+        "zona core": [],
+        "campus uno": [],
+        "campus matriz": [],
+        "dual stack": [],
+        "sector outsourcing": []
+    }
 
 print("que quieres hacer? ")
 print("1. Ver los dispositivos. \n2. Ver los campus. \n3. Añadir dispositivo. \n4. Añadir campus.")
@@ -136,6 +145,11 @@ elif int(selector) == 3:
         "jerarquia": jerarquia,
         "servicios": servicios
     })
+
+    # Guardar el nuevo estado en el archivo
+    with open(archivo_datos, "w") as archivo:
+        json.dump(dispositivos_por_campus, archivo, indent=4)
+
     print("\n¡Dispositivo agregado con éxito!")
 
 # Opción 4: Añadir campus 
@@ -144,4 +158,9 @@ elif int(selector) == 4:
     print("Ingrese el nombre del nuevo campus:")
     nuevo_campus = input("Nombre: ")
     dispositivos_por_campus[nuevo_campus] = []
+
+    # Guardar después de añadir el campus
+    with open(archivo_datos, "w") as archivo:
+        json.dump(dispositivos_por_campus, archivo, indent=4)
+
     print(f"\n¡Campus {nuevo_campus} creado!")
