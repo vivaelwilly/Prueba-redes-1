@@ -1,0 +1,42 @@
+[
+    {
+        "tipo": "PC",
+        "nombre": "PC-DUAL-STACK",
+        "ip": "10.10.10.5",
+        "vlan": "",
+        "jerarquia": "N\u00facleo",
+        "servicios": []
+    },
+    {
+        "tipo": "SERVIDOR",
+        "nombre": "SERV-DUALSTACK",
+        "ip": "10.10.10.7",
+        "vlan": "",
+        "jerarquia": "N\u00facleo",
+        "servicios": []
+    },
+    {
+        "tipo": "SWITCH",
+        "nombre": "ORIENTE ",
+        "ip": "192.50.10.10",
+        "vlan": "",
+        "jerarquia": "Distribuci\u00f3n",
+        "servicios": [
+            "Datos",
+            "VLAN",
+            "Trunking"
+        ]
+    },
+    {
+        "tipo": "SWITCH",
+        "nombre": "MATRIZ",
+        "ip": "172.10.10.2",
+        "vlan": "",
+        "jerarquia": "Distribuci\u00f3n",
+        "servicios": [
+            "Datos",
+            "VLAN",
+            "Trunking"
+        ]
+    }
+]

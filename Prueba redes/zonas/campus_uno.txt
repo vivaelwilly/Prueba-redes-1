@@ -1,0 +1,50 @@
+[
+    {
+        "tipo": "SERVIDOR",
+        "nombre": "SERVICIOS",
+        "ip": "192.168.10.1",
+        "vlan": "",
+        "jerarquia": "Distribuci\u00f3n",
+        "servicios": []
+    },
+    {
+        "tipo": "PC",
+        "nombre": "PC-1",
+        "ip": "192.168.10.5",
+        "vlan": "20",
+        "jerarquia": "Acceso",
+        "servicios": []
+    },
+    {
+        "tipo": "IMPRESORA",
+        "nombre": "IMPRESORAS ",
+        "ip": "192.168.10.6",
+        "vlan": "",
+        "jerarquia": "Acceso",
+        "servicios": []
+    },
+    {
+        "tipo": "SWITCH_MULTICAPA",
+        "nombre": "SITE-LOCAL",
+        "ip": "192.169.10.7",
+        "vlan": "",
+        "jerarquia": "Acceso",
+        "servicios": [
+            "Enrutamiento",
+            "Datos",
+            "VLAN"
+        ]
+    },
+    {
+        "tipo": "SWITCH",
+        "nombre": "ORIENTE ",
+        "ip": "192.50.10.10",
+        "vlan": "",
+        "jerarquia": "Distribuci\u00f3n",
+        "servicios": [
+            "Datos",
+            "VLAN",
+            "Trunking"
+        ]
+    }
+]

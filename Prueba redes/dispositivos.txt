@@ -1,0 +1,219 @@
+{
+    "zona core": [],
+    "campus uno": [
+        {
+            "tipo": "SERVIDOR",
+            "nombre": "SERVICIOS",
+            "ip": "192.168.10.1",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": []
+        },
+        {
+            "tipo": "PC",
+            "nombre": "PC-1",
+            "ip": "192.168.10.5",
+            "vlan": "20",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "IMPRESORA",
+            "nombre": "IMPRESORAS ",
+            "ip": "192.168.10.6",
+            "vlan": "",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "SWITCH_MULTICAPA",
+            "nombre": "SITE-LOCAL",
+            "ip": "192.169.10.7",
+            "vlan": "",
+            "jerarquia": "Acceso",
+            "servicios": [
+                "Enrutamiento",
+                "Datos",
+                "VLAN"
+            ]
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "ORIENTE ",
+            "ip": "192.50.10.10",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        }
+    ],
+    "campus matriz": [
+        {
+            "tipo": "PC",
+            "nombre": "VENTAS-1",
+            "ip": "172.168.0.5",
+            "vlan": "10",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "PC",
+            "nombre": "VENTAS-2",
+            "ip": "172.168.10.6",
+            "vlan": "10",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "PC",
+            "nombre": "PROCESOS",
+            "ip": "172.168.10.8",
+            "vlan": "20",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "PC",
+            "nombre": "FINANZAS",
+            "ip": "172.168.10.9",
+            "vlan": "30",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "BACKBONE-MATRIZ",
+            "ip": "172.168.10.10",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "MATRIZ",
+            "ip": "172.10.10.1",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        }
+    ],
+    "dual stack": [
+        {
+            "tipo": "PC",
+            "nombre": "PC-DUAL-STACK",
+            "ip": "10.10.10.5",
+            "vlan": "",
+            "jerarquia": "N\u00facleo",
+            "servicios": []
+        },
+        {
+            "tipo": "SERVIDOR",
+            "nombre": "SERV-DUALSTACK",
+            "ip": "10.10.10.7",
+            "vlan": "",
+            "jerarquia": "N\u00facleo",
+            "servicios": []
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "ORIENTE ",
+            "ip": "192.50.10.10",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "MATRIZ",
+            "ip": "172.10.10.2",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        }
+    ],
+    "sector outsourcing": [
+        {
+            "tipo": "PC",
+            "nombre": "PC-1",
+            "ip": "192.10.10.7",
+            "vlan": "",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "RRPP",
+            "ip": "192.10.10.8",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        },
+        {
+            "tipo": "PC",
+            "nombre": "PC-2",
+            "ip": "192.10.10.9",
+            "vlan": "",
+            "jerarquia": "Acceso",
+            "servicios": []
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "RRHH",
+            "ip": "192.10.10.11",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "ORIENTE ",
+            "ip": "192.50.10.10",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        },
+        {
+            "tipo": "SWITCH",
+            "nombre": "MATRIZ",
+            "ip": "172.10.10.3",
+            "vlan": "",
+            "jerarquia": "Distribuci\u00f3n",
+            "servicios": [
+                "Datos",
+                "VLAN",
+                "Trunking"
+            ]
+        }
+    ]
+}

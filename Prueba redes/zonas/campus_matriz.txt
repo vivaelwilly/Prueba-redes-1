@@ -1,0 +1,58 @@
+[
+    {
+        "tipo": "PC",
+        "nombre": "VENTAS-1",
+        "ip": "172.168.0.5",
+        "vlan": "10",
+        "jerarquia": "Acceso",
+        "servicios": []
+    },
+    {
+        "tipo": "PC",
+        "nombre": "VENTAS-2",
+        "ip": "172.168.10.6",
+        "vlan": "10",
+        "jerarquia": "Acceso",
+        "servicios": []
+    },
+    {
+        "tipo": "PC",
+        "nombre": "PROCESOS",
+        "ip": "172.168.10.8",
+        "vlan": "20",
+        "jerarquia": "Acceso",
+        "servicios": []
+    },
+    {
+        "tipo": "PC",
+        "nombre": "FINANZAS",
+        "ip": "172.168.10.9",
+        "vlan": "30",
+        "jerarquia": "Acceso",
+        "servicios": []
+    },
+    {
+        "tipo": "SWITCH",
+        "nombre": "BACKBONE-MATRIZ",
+        "ip": "172.168.10.10",
+        "vlan": "",
+        "jerarquia": "Distribuci\u00f3n",
+        "servicios": [
+            "Datos",
+            "VLAN",
+            "Trunking"
+        ]
+    },
+    {
+        "tipo": "SWITCH",
+        "nombre": "MATRIZ",
+        "ip": "172.10.10.1",
+        "vlan": "",
+        "jerarquia": "Distribuci\u00f3n",
+        "servicios": [
+            "Datos",
+            "VLAN",
+            "Trunking"
+        ]
+    }
+]
