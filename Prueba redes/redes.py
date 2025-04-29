@@ -1,6 +1,5 @@
 import os
 import json
-from tkinter import Variable
 
 # Inicialización de variables 
 x = 0
